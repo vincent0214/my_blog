@@ -1,7 +1,7 @@
 ---
-title: youtube-dl使用说明
-tags: [下载]
-category: 软件使用
+title: 使用Youtube-dl下载视频
+tags: [下载工具]
+category: 软件
 index_img: /img/article/2021/1.jpg
 date: 2021-06-29 10:00:00
 ---
