@@ -54,21 +54,19 @@ pip install --upgrade youtube-dl
 
 ## 使用说明
 
-### 1. 下载某个频道的所有视频
-
-`-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称,
-
-`-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置视频格式为mp4,
-`--playlist-reverse`反转下载列表, 因为默认是按最新时间为开头排序,所以要加这个参数
-最后的参数是`视频列表网址`
+### 1. 下载视频列表
 
 ```bash
 youtube-dl \
 --playlist-reverse \
 -o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s" \
 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
-https://www.youtube.com/channel/UCL_6y6pug2cYoYCYvXDbgHA/videos
+https://www.youtube.com/c/RandomHands/videos
 ```
+`-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称,
+`-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置视频格式为mp4,
+`--playlist-reverse`反转下载列表, 因为默认是按最新时间为开头排序,所以要加这个参数
+最后的参数是`视频列表地址`
 
 ### 2.下载字幕
 
@@ -108,7 +106,7 @@ youtube-dl \
 --write-description \
 --get-filename  \
 -o '%(playlist_index)s-%(title)s-%(upload_date)s.mp4'  \
-https://www.youtube.com/channel/UCL_6y6pug2cYoYCYvXDbgHA/videos \
+https://www.youtube.com/c/RandomHands/videos \
 > video_names.txt
 ```
 
