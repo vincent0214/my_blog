@@ -20,10 +20,11 @@ date: 2021-06-29 10:00:00
 安装python时, 勾选`pip`选项即可
 ![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/11.png)
 
+### 安装`ffmpeg`(选择安装)
 
-### 安装`ffmpeg`
+主要用来转换`mp4`格式
 
-   > https://github.com/BtbN/FFmpeg-Builds/releases
+   > 下载地址: https://github.com/BtbN/FFmpeg-Builds/releases
 
    ![image-20210627185448896](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210627185448896.png)
 
@@ -38,6 +39,19 @@ date: 2021-06-29 10:00:00
    如图所示, 添加环境变量`ffmpeg解压缩目录\bin`
 
    ![image-20210627185841049](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210627185841049.png)
+
+### 安装`aria2`(选择安装)
+
+如果不需要多线程下载话,可以不用安装.
+
+`aira2`是一个可以多线程下载的命令行`下载工具`,可以用于提高下载速度.`youtube-dl`默认是单线程下载.
+
+下载完成后,`安装目录`添加到`环境变量`即可(参考`ffmpeg`安装过程即可)
+
+![image-20210630102346258](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210630102346258.png)
+
+> 官网: https://aria2.github.io/
+> 使用说明 https://zhuanlan.zhihu.com/p/30666881
 
 ### 安装`youtube-dl`
 
@@ -62,7 +76,7 @@ youtube-dl \
 --playlist-reverse \
 -o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s" \
 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
-https://www.youtube.com/c/RandomHands/videos
+https://www.youtube.com/c/**************/videos
 ```
 `-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称,
 `-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置视频格式为mp4,
@@ -107,7 +121,7 @@ youtube-dl \
 --write-description \
 --get-filename  \
 -o '%(playlist_index)s-%(title)s-%(upload_date)s.mp4'  \
-https://www.youtube.com/c/RandomHands/videos \
+https://www.youtube.com/c/**************/videos \
 > video_names.txt
 ```
 
@@ -116,6 +130,33 @@ https://www.youtube.com/c/RandomHands/videos \
 > 
 >  https://zhuanlan.zhihu.com/p/105141332
 >  https://github.com/ytdl-org/youtube-dl
+
+## 进阶使用
+
+### 搭配`aria2`进行多线程下载
+
+```bash
+youtube-dl \
+--playlist-reverse \
+-o 'E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s' \
+-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
+--external-downloader aria2c \
+--external-downloader-args '-x 16 -k 1M' \
+https://www.youtube.com/c/**************/videos
+```
+
+上面命令可以加入`--playlist-end 5`测试下载5个视频
+
+> 参数说明 
+>
+> `--external-downloader aria2c`  //调用外部下载工具
+>
+> `--external-downloader-args` //外部下载工具指定参数
+>
+> `-x 16` //启用aria2 16个线程，最多就支持16线程
+>
+> `-K 1M ` //指定块的大小
+
 
 ## 其他问题
 
