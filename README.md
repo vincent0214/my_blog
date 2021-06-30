@@ -18,9 +18,26 @@ npm install -g hexo-cli
 npm install hexo-deployer-git --save
 ```
 
+### 安装主题
+```bash
+npm install --save hexo-theme-fluid
+```
+然后在博客目录下创建`_config.fluid.yml`，将主题的 [_config.yml](https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml) 内容复制进去。
+> 参考: https://github.com/fluid-dev/hexo-theme-fluid
 
 
 ## 使用说明
+
+### 开启本地服务器
+调试页面时, 不用生成页面. 直接开启本地服务器即可 
+如果修改了配置文件, 重新开启本地服务器即可
+
+```bash
+hexo s
+```
+
+> 原文 https://hexo.io/zh-cn/docs/generating
+
 
 ### 生成页面
 
@@ -30,19 +47,8 @@ hexo g
 
 > 原文 https://hexo.io/zh-cn/docs/server
 
-### 本地服务器
-
-```bash
-hexo s
-```
-
-> 原文 https://hexo.io/zh-cn/docs/generating
-
 ### 发布到github (一键部署)
-
-```bash
-hexo d
-```
+**执行部署之前, 需要`生成页面`**
 
 修改配置文件`_config.yml`
 
@@ -52,6 +58,10 @@ deploy:
   repo: <repository url> #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   branch: [branch]
 ```
+执行命令
+```bash
+hexo d
+```
 
 ## github设置
 
@@ -59,7 +69,7 @@ deploy:
 
 ![image-20210629130032633.png](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130032633.png)
 
-`blog.wingogo.tk`是我的域名
+`blog.wingogo.tk`是提前准备好的域名
 
 ## 配置域名
 
