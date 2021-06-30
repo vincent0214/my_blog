@@ -2,8 +2,8 @@
 title: 使用Youtube-dl下载视频
 tags: [下载工具]
 category: 软件
-index_img: /img/article/2021/pexels-freestocksorg-34407.jpg
-banner_img: /img/article/2021/pexels-freestocksorg-34407.jpg
+index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/pexels-freestocksorg-34407.jpg
+banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/pexels-freestocksorg-34407.jpg
 date: 2021-06-29 10:00:00
 ---
 
