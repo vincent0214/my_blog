@@ -77,10 +77,14 @@ dns设置`CNAME`记录值为github page的url
 
 ![image-20210629130228507](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130228507.png)
 
-`source`文件夹添加`文件`cname
+在`source`文件夹添加`文件`CNAME
 
 ![image-20210629130549711](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130549711.png)
 
 设置`url`为域名
 
 ![image-20210629130647291](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130647291.png)
+
+>[官方原文](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain)
+> 
+> To set up a www or custom subdomain, such as www.example.com or blog.example.com, you must add your domain in the repository settings, which will create a CNAME file in your site’s repository. After that, configure a CNAME record with your DNS provider.
