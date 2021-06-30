@@ -1,3 +1,7 @@
 code {
-	color: #e83e8c; 
+  color: #e83e8c;
+}
+
+.image-caption {
+  display: none;
 }
