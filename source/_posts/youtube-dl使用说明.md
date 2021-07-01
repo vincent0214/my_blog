@@ -10,15 +10,31 @@ date: 2021-06-29 10:00:00
 
 ## 准备工作
 
-### 安装`python3` 
+### 安装`python3`和`pip`
 
    >  下载地址: https://www.python.org/downloads/
    >  安装教程: https://zhuanlan.zhihu.com/p/344887837
 
-###  安装`pip`
+![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/python_%E5%AE%89%E8%A3%852.jpg)
 
-安装python时, 勾选`pip`选项即可
+![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/python_%E5%AE%89%E8%A3%851.jpg)
+
+安装时, 记得勾选`pip`
 ![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/11.png)
+
+### 安装`youtube-dl`
+
+> 参考网站 https://github.com/ytdl-org/youtube-dl
+
+命令安装:
+
+```bash
+pip install --upgrade youtube-dl
+```
+
+或者[下载ext文件](https://yt-dl.org/latest/youtube-dl.exe)
+ > 官方原话:
+ > Windows users can [download  an .exe file](https://yt-dl.org/latest/youtube-dl.exe) and place it in any location on their [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) except for `%SYSTEMROOT%\System32` (e.g. **do not** put in `C:\Windows\System32`).
 
 ### 安装`ffmpeg`(选择安装)
 
@@ -53,19 +69,7 @@ date: 2021-06-29 10:00:00
 > 官网: https://aria2.github.io/
 > 使用说明 https://zhuanlan.zhihu.com/p/30666881
 
-### 安装`youtube-dl`
 
-> 参考网站 https://github.com/ytdl-org/youtube-dl
-
-命令安装:
-
-```bash
-pip install --upgrade youtube-dl
-```
-
-或者[下载ext文件](https://yt-dl.org/latest/youtube-dl.exe)
- > 官方原话:
- > Windows users can [download  an .exe file](https://yt-dl.org/latest/youtube-dl.exe) and place it in any location on their [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) except for `%SYSTEMROOT%\System32` (e.g. **do not** put in `C:\Windows\System32`).
 
 ## 使用说明
 
