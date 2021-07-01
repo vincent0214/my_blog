@@ -32,9 +32,10 @@ date: 2021-06-29 10:00:00
 pip install --upgrade youtube-dl
 ```
 
-或者[下载ext文件](https://yt-dl.org/latest/youtube-dl.exe)
- > 官方原话:
- > Windows users can [download  an .exe file](https://yt-dl.org/latest/youtube-dl.exe) and place it in any location on their [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) except for `%SYSTEMROOT%\System32` (e.g. **do not** put in `C:\Windows\System32`).
+或者[下载exe文件](https://yt-dl.org/latest/youtube-dl.exe)
+
+官方原话:
+> Windows users can [download  an .exe file](https://yt-dl.org/latest/youtube-dl.exe) and place it in any location on their [PATH](https://en.wikipedia.org/wiki/PATH_(variable)) except for `%SYSTEMROOT%\System32` (e.g. **do not** put in `C:\Windows\System32`).
 
 ### 安装`ffmpeg`(选择安装)
 
