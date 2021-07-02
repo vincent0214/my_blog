@@ -28,7 +28,14 @@ npm install --save hexo-theme-fluid
 
 ## 使用说明
 
+### 清理当前生成的页面
+
+```bahs
+hexo clean
+```
+
 ### 开启本地服务器
+
 调试页面时, 不用生成页面. 直接开启本地服务器即可 
 如果修改了配置文件, 重新开启本地服务器即可
 
@@ -69,22 +76,23 @@ hexo d
 
 ![image-20210629130032633.png](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130032633.png)
 
-`blog.wingogo.tk`是提前准备好的域名
+`blog.wingogo.tk`是准备好的`域名`
 
 ## 配置域名
 
-dns设置`CNAME`记录值为github page的url
+DNS设置`CNAME`记录值为github page的url
 
 ![image-20210629130228507](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130228507.png)
 
-在`source`文件夹添加`文件`CNAME
+在`source`文件夹添加`文件`**CNAME**
 
 ![image-20210629130549711](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130549711.png)
 
-设置`url`为域名
+> [官方原文](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain)
+>
+> To set up a www or custom subdomain, such as www.example.com or blog.example.com, you must add your domain in the repository settings, which will create a CNAME file in your site’s repository. After that, configure a CNAME record with your DNS provider.
+
+设置`url`为`域名`
 
 ![image-20210629130647291](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130647291.png)
 
->[官方原文](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain)
-> 
-> To set up a www or custom subdomain, such as www.example.com or blog.example.com, you must add your domain in the repository settings, which will create a CNAME file in your site’s repository. After that, configure a CNAME record with your DNS provider.
