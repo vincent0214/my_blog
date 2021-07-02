@@ -19,6 +19,9 @@ npm install hexo-deployer-git --save
 ```
 
 ### 安装主题
+
+安装`fluid主题`
+
 ```bash
 npm install --save hexo-theme-fluid
 ```
