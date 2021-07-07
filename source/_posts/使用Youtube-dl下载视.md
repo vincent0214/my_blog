@@ -84,7 +84,7 @@ youtube-dl \
 https://www.youtube.com/c/**************/videos
 ```
 - `-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称
-- `-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置下载视频格式为`mp4`.
+- `-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置下载视频格式为`mp4`
 如果不支持下载`mp4`格式, 把这个参数改为`-f best`可以下载其他格式
 - `--playlist-reverse`反转下载列表, 因为默认是按最新时间为开头排序,所以要加这个参数
 最后的参数是`视频列表地址`
