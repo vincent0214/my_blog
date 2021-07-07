@@ -83,9 +83,10 @@ youtube-dl \
 -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
 https://www.youtube.com/c/**************/videos
 ```
-`-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称,
-`-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置视频格式为mp4,
-`--playlist-reverse`反转下载列表, 因为默认是按最新时间为开头排序,所以要加这个参数
+- `-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称
+- `-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置下载视频格式为`mp4`.
+如果不支持下载`mp4`格式, 把这个参数改为`-f best`可以下载其他格式
+- `--playlist-reverse`反转下载列表, 因为默认是按最新时间为开头排序,所以要加这个参数
 最后的参数是`视频列表地址`
 
 ### 2.下载字幕
@@ -110,7 +111,7 @@ Youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表
 - 下载特定时间段内（例如 2018 年 1 月 1 日至 2019 年 1 月 1 日）上传的视频：`youtube-dl --dateafter 20180101 --datebefore 20190101 [URL]`。
 
 
-### 4. 按序号下载视频
+### 4. 按序号下载视频列表
 要从播放列表下载第 10 个文件，可使用：`youtube-dl --playlist-items 10 [playlist_url]`
 要下载多个指定的文件，用逗号分隔：`youtube-dl --playlist-items 2,3,7,10 [playlist_url]`
 
