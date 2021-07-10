@@ -15,25 +15,38 @@ date: 2021-07-09 22:26:00
 
 ## 下载
 
-服务端: https://github.com/aria2/aria2/releases/tag/release-1.35.0
-客户端: https://github.com/mayswind/AriaNg
+服务端`aria2`: https://github.com/aria2/aria2/releases/tag/release-1.35.0
 
-服务端即是`aria2`
+![image-20210710113706713](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121320.png)
 
-客户端即是`Aria2Ng`
+客户端`Aria2Ng`: https://github.com/mayswind/AriaNg/releases/tag/1.2.2
+
+![image-20210710113758236](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121323.png)
 
 ## 安装
 
-### 添加环境变量
+### 解压安装包
 
-在环境变量`path`中添加`aria2`安装目录
+**安装包文件夹存放位置就是本文所说的`aria2`安装目录**
+
+![image-20210710114058804](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121340.png)
+
+### 添加环境变量
+在环境变量`Path`中添加`aria2`安装目录
+
+
+
+![image-20210710114307321](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121233.png)
+
+![image-20210710114230218](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121236.png)
+
+![image-20210710114445538](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121239.png)
 
 ![image-20210709214803477](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210709222314.png)
 
-
 ### 创建配置文件
 
-在`aria2`安装目录创建`aria2.conf`配置文件
+在`aria2`安装目录创建`aria2.conf`配置文件. 
 
 ```properties
 ## 全局设置 ## ============================================================
@@ -196,10 +209,19 @@ bt-max-open-files=16
 
 > `aria2.session`是一个记录了下载任务记录的文件
 
+### 解压缩客户端安装包
+
+![image-20210710115511400](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121253.png)
+
+`index.html`就是客户端`AriaNg`的执行文件.
 
 ## RPC使用方式
 
 ### 开启服务端`aria2`
+
+> **原理**: 通过读取指定的配置文件,把`aria2`的`rpc`模式(服务器模式)开启.客户端用ip和端口连接到`aria2`.
+>
+> 默认情况下`aria2`是一个命令行下载工具.
 
 #### 方式一
 
@@ -221,11 +243,13 @@ aria2c.exe --conf-path=aria2.conf
 
 然后在bash命令行输入`sh run.sh`运行`aria2`.
 
+
+
 ### 开启客户端`AriaNg`
 
-打开`AriaNg.html`,客户端`AriaNg`会自动连接服务端
+打开`AriaNg`的安装目录的`index.html`,即可进入`AriaNg` 界面
 
-如果出现连接不成功, 说明客户端`AriaNg`没有找到服务端
+客户端`AriaNg`会自动连接服务端. 如果出现连接不成功, 说明客户端`AriaNg`没有找到服务端
 
 ![image-20210709213842832](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210709222312.png)
 
@@ -233,7 +257,7 @@ aria2c.exe --conf-path=aria2.conf
 
 ## 命令行使用方式
 
-在命令行输入命令来下文件.  这种方式可以不用 客户端
+在命令行输入命令, 来下载文件.  这种方式**可以不用`AriaNg`客户端**
 
 Download from WEB:
 
@@ -279,7 +303,7 @@ $ aria2c -i uris.txt
 
 ## 参考
 
-- [Aria2 配置详解](https://www.jianshu.com/p/6adf79d29add)
+- [Aria2配置详解](https://www.jianshu.com/p/6adf79d29add)
 - [aria2官方网站](https://aria2.github.io/)
 - [Aria2基础上手指南](https://zhuanlan.zhihu.com/p/30666881)
 
