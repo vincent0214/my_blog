@@ -7,6 +7,11 @@ banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/p
 date: 2021-06-29 10:00:00
 ---
 
+## 简介
+`youtube-dl`是一款命令行下载工具,可以用来下载视频网站的视频.
+[支持列表](https://ytdl-org.github.io/youtube-dl/supportedsites.html)包括: BiliBili, youtube, 爱奇艺等
+
+> youtube-dl项目由Ricardo Garcia创建于2008年。源代码由Python编写，托管在GitHub上。最初仅支持YouTube，但随着项目的发展，开始支持其他视频网站。2011年Ricardo Garcia不再维护此项目，由phihag接手，后转移给dstftw.
 
 ## 准备工作
 
