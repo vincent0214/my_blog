@@ -1,6 +1,6 @@
 ---
 title: 批量下载B站视频
-tags: [软件,下载工具]
+tags: [下载工具, B站]
 category: 软件
 index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210720162327.png
 banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210720162327.png
