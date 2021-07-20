@@ -49,10 +49,10 @@ date: 2021-07-09 22:26:00
 在`aria2`安装目录创建`aria2.conf`配置文件. 
 
 ```properties
-## 全局设置 ## ============================================================
+## aria2配置 ## ============================================================
 # 日志
 #log-level=warn
-#log=/PATH/.aria2/aria2.log
+#log=./log/aria2.log
 
 # 后台运行
 daemon=true
@@ -94,10 +94,10 @@ check-integrity=true
 
 ## 下载位置 ## ============================================================
 # 最大同时下载任务数, 运行时可修改, 默认:5
-max-concurrent-downloads=5
+max-concurrent-downloads=10
 
 # 同一服务器连接数, 添加时可指定, 默认:1
-max-connection-per-server=5
+max-connection-per-server=10
 
 # 最小文件分片大小, 添加时可指定, 取值范围1M -1024M, 默认:20M
 # 假定size=10M, 文件为20MiB 则使用两个来源下载; 文件为15MiB 则使用一个来源下载
@@ -203,7 +203,7 @@ bt-max-open-files=16
 
 ### 创建session文件
 
-在`aria2`安装目录**创建文件夹**`session`
+在`aria2`安装目录, **创建文件夹**`session`
 
 然后在文件夹`session`, **创建空白文件**`aria2.session`
 
@@ -213,7 +213,7 @@ bt-max-open-files=16
 
 ![image-20210710115511400](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121253.png)
 
-`index.html`就是客户端`AriaNg`的执行文件.
+`index.html`是客户端`AriaNg`的执行文件.
 
 ## RPC使用方式
 
@@ -241,15 +241,15 @@ CreateObject("WScript.Shell").Run "aria2c.exe --conf-path=aria2.conf",0
 aria2c.exe --conf-path=aria2.conf  
 ```
 
-然后在bash命令行输入`sh run.sh`运行`aria2`.
+然后在`bash`命令行输入`sh run.sh`运行`aria2`.
 
 
 
 ### 开启客户端`AriaNg`
 
-打开`AriaNg`的安装目录的`index.html`,即可进入`AriaNg` 界面
+打开`AriaNg`安装目录的`index.html`, 即可进入`AriaNg` 界面
 
-客户端`AriaNg`会自动连接服务端. 如果出现连接不成功, 说明客户端`AriaNg`没有找到服务端
+客户端`AriaNg`会自动连接服务端. 如果出现连接不成功,  说明客户端`AriaNg`没有找到服务端
 
 ![image-20210709213842832](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210709222312.png)
 
@@ -257,7 +257,7 @@ aria2c.exe --conf-path=aria2.conf
 
 ## 命令行使用方式
 
-在命令行输入命令, 来下载文件.  这种方式**可以不用`AriaNg`客户端**
+在命令行输入命令下载文件.  这种方式**可以不用`AriaNg`客户端**
 
 Download from WEB:
 
