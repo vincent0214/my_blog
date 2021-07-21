@@ -1,6 +1,6 @@
 ---
 title: 教你用Hexo创建个人博客 
-tags: [博客]
+tags: [博客, Hexo]
 category: Web
 index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/R.7bbe64c2282a997092613d004f0222f2.png
 banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/R.7bbe64c2282a997092613d004f0222f2.png

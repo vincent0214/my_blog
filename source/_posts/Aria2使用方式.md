@@ -1,6 +1,6 @@
 ---
 title: Aria2使用方式
-tags: [下载工具]
+tags: [下载工具, Aria2]
 category: 软件
 index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210709224201.png 
 banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210709222312.png
