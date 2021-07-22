@@ -1,6 +1,6 @@
 ---
-title: 红米7刷LineageOS 
-tags: [红米手机,刷ROM]
+title: 红米7刷LineageOS系统
+tags: [红米手机, 手机刷ROM]
 category: 手机
 index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702180935.png
 banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702180935.png
@@ -132,3 +132,6 @@ adb sideload lineage-18.1-20210613-nightly-onclite-signed.zip
 ![Image15](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702181139.png)
 
 ![Image16](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702181141.png)
+
+## 参考
+[2020年 小米6 刷机 LineageOS 17.1 Official](https://ericclose.github.io/Install-LineageOS-on-sagit.html)
