@@ -1,6 +1,6 @@
 ---
-title: 红米7刷LineageOS系统
-tags: [红米手机, 手机刷ROM]
+title: 红米7刷LineageOS系统 
+tags: [手机刷ROM, 红米手机, 小米手机, 红米7]
 category: 手机
 index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702180935.png
 banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702180935.png

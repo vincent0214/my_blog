@@ -1,6 +1,6 @@
 ---
 title: Aria2使用方式
-tags: [下载工具]
+tags: [下载工具, Aria2]
 category: 软件
 index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210709224201.png 
 banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210709222312.png
@@ -25,7 +25,7 @@ date: 2021-07-09 22:26:00
 
 ## 安装
 
-### 解压安装包
+### 解压`aria2`安装包
 
 **安装包文件夹存放位置就是本文所说的`aria2`安装目录**
 
@@ -209,7 +209,7 @@ bt-max-open-files=16
 
 > `aria2.session`是一个记录了下载任务记录的文件
 
-### 解压缩客户端安装包
+### 解压缩客户端`AriaNg`安装包
 
 ![image-20210710115511400](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210710121253.png)
 
@@ -225,23 +225,23 @@ bt-max-open-files=16
 
 #### 方式一
 
-在`aria2`安装目录, 创建`runAria2.vbs`
+在`aria2`安装目录, 创建文件`runAria2.vbs`
 
 ```vbscript
 CreateObject("WScript.Shell").Run "aria2c.exe --conf-path=aria2.conf",0
 ```
 
-双击`runAria2.vbs`文件运行`aria2`.
+双击文件`runAria2.vbs`, 运行`aria2`.
 
 #### 方式二
 
-在`aria2`安装目录, 创建`run.sh`
+在`aria2`安装目录, 创建`runAria2.sh`
 
 ```bash
 aria2c.exe --conf-path=aria2.conf  
 ```
 
-然后在`bash`命令行输入`sh run.sh`运行`aria2`.
+然后在`bash`命令行输入`sh runAria2.sh`运行`aria2`.
 
 
 
