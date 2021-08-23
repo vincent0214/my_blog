@@ -79,7 +79,21 @@ pip install --upgrade youtube-dl
 
 ## 使用说明
 
-### 1. 下载视频列表
+### 0. 下载单个视频
+
+```bash
+youtube-dl \
+-o "E:\保存位置\%(title)s-%(upload_date)s.%(ext)s" \
+-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
+https://www.youtube.com/watch?v=********     
+```
+
+- `-o "E:\保存位置\%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称
+- `-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置下载视频格式为`mp4`
+  如果不支持下载`mp4`格式, 把这个参数改为`-f best`可以下载其他格式
+- `https://www.youtube.com/watch?v=******** ` 视频地址
+
+### 1. 下载频道里面的多个视频
 
 ```bash
 youtube-dl \
@@ -94,14 +108,31 @@ https://www.youtube.com/c/**************/videos
 - `--playlist-reverse`反转下载列表, 因为默认是按最新时间为开头排序,所以要加这个参数
 最后的参数是`视频列表地址`
 
-### 2.下载字幕
+### 2.下载播放列表(专辑列表)
+
+```bash
+ youtube-dl \
+ --yes-playlist \
+ -o 'E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s' \
+ -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
+ https://www.youtube.com/playlist?list=**********
+```
+
+`--yes-playlist` 下载播放列表, 专门用来下载视频专辑的参数
+
+`-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称
+
+`-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置下载视频格式为`mp4`
+如果不支持下载`mp4`格式, 把这个参数改为`-f best`可以下载其他格式
+
+### 3.下载字幕
 
 `youtube-dl --write-sub [url]`这样会下载一个vtt格式的英文字幕和mkv格式的1080p视频下来
 `youtube-dl --write-sub --skip-download [url]`下载单独的vtt字幕文件,而不会下载视频
 `youtube-dl --write-sub --all-subs [url]`下载所有语言的字幕(如果有的话)
 `youtube-dl --write-auto-sub [url]`下载自动生成的字幕(YouTube only)
 
-### 3.按日期下载视频列表
+### 4.按日期下载视频列表
 
 Youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表，例如：
 
@@ -116,7 +147,7 @@ Youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表
 - 下载特定时间段内（例如 2018 年 1 月 1 日至 2019 年 1 月 1 日）上传的视频：`youtube-dl --dateafter 20180101 --datebefore 20190101 [URL]`。
 
 
-### 4. 按序号下载视频列表
+### 5. 按序号下载视频列表
 要从播放列表下载第 10 个文件，可使用：`youtube-dl --playlist-items 10 [playlist_url]`
 要下载多个指定的文件，用逗号分隔：`youtube-dl --playlist-items 2,3,7,10 [playlist_url]`
 
@@ -125,7 +156,7 @@ Youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表
 - 从第 10 个开始，直接下载完整个列表：`youtube-dl --playlist-start 10 [playlist_url]`
 - 在播放列表中仅下载从第 2 到第 5 的文件：`youtube-dl --playlist-start 2 --playlist-end 5 [playlist_url]`
 
-### 5. 查看视频的所有类型，只看不下载
+### 6. 查看视频的所有类型，只看不下载
 
 命令：`youtube-dl -F [url]`或者`youtube-dl --list-formats [url]`。
 这是一个列清单参数，执行后并不会下载视频，但能知道这个目标视频都有哪些格式存在，以便有选择的下载。
@@ -135,7 +166,7 @@ Youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表
 如上图所示，Youtube-dl 列出了给定视频的所有可用格式，从左到右分别为：format code（视频格式代码）、extension（扩展名）、resolution（分辨率）和 note（注释）。当您想要以特定质量或格式下载视频时，先查看一下有哪些可用，会非常便利。
 
 
-### 6. 下载视频列表文件名称, 输出到txt文件
+### 7. 下载视频列表文件名称, 输出到txt文件
 ```bash
 youtube-dl \
 --playlist-reverse \
@@ -146,9 +177,7 @@ https://www.youtube.com/c/**************/videos \
 > video_names.txt
 ```
 
-
-
-### 7. 更多使用方法
+### 8. 更多使用方法
 
 > 
 >  https://zhuanlan.zhihu.com/p/105141332
