@@ -79,7 +79,21 @@ pip install --upgrade youtube-dl
 
 ## 使用说明
 
-### 1. 下载视频列表
+### 0. 下载单个视频
+
+```bash
+youtube-dl \
+-o "E:\保存位置\%(title)s-%(upload_date)s.%(ext)s" \
+-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
+https://www.youtube.com/watch?v=********     
+```
+
+- `-o "E:\保存位置\%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称
+- `-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置下载视频格式为`mp4`
+  如果不支持下载`mp4`格式, 把这个参数改为`-f best`可以下载其他格式
+- `https://www.youtube.com/watch?v=******** ` 视频地址
+
+### 1. 下载频道里面的多个视频
 
 ```bash
 youtube-dl \
@@ -93,6 +107,23 @@ https://www.youtube.com/c/**************/videos
 如果不支持下载`mp4`格式, 把这个参数改为`-f best`可以下载其他格式
 - `--playlist-reverse`反转下载列表, 因为默认是按最新时间为开头排序,所以要加这个参数
 最后的参数是`视频列表地址`
+
+### 2.下载播放列表(专辑列表)
+
+```bash
+ youtube-dl \
+ --yes-playlist \
+ -o 'E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s' \
+ -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4' \
+ https://www.youtube.com/playlist?list=**********
+```
+
+`--yes-playlist` 下载播放列表, 专门用来下载视频专辑的参数
+
+`-o "E:\保存位置\%(playlist_index)s-%(title)s-%(upload_date)s.%(ext)s"` 视频输出路径和视频文件名称
+
+`-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4'`设置下载视频格式为`mp4`
+如果不支持下载`mp4`格式, 把这个参数改为`-f best`可以下载其他格式
 
 ### 2.下载字幕
 
@@ -145,8 +176,6 @@ youtube-dl \
 https://www.youtube.com/c/**************/videos \
 > video_names.txt
 ```
-
-
 
 ### 7. 更多使用方法
 
