@@ -4,7 +4,7 @@ tags: [中间件]
 category: JAVA开发
 index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702180935.png
 banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210702180935.png
-date: 2021-07-02 18:00:00
+date: 2021-08-30 21:00:00
 ---
 
 ## 下载Zookeeper 
