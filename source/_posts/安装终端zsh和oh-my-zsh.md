@@ -30,7 +30,10 @@ cat /etc/shells  # 查看是否存在zsh,并查看zsh路径
 ```bash
 chsh -s /bin/zsh # 从上面的命令查到zsh的路径是`/bin/zsh`
 ```
-之后`重启`或者`重新登录`
+然后source一下
+```bash
+source ~/.zshrc
+````
 
 `chsh -s`原理是修改`/etc/passwd`文件中和我们所登录的用户名相对应的那一行。
 ```bash
@@ -43,11 +46,11 @@ roc:x:1001:1001::/home/roc:/bin/zsh
 sh -c "$(curl -fsSL https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)"
 ```
 
-## 安装插件zsh-autosuggestion
+## 安装命令提示插件zsh-autosuggestion
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions  ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
-编辑` .zshrc`
+编辑`~/.zshrc`
 ```bash
 vim  ~/.zshrc
 ```
@@ -56,3 +59,18 @@ vim  ~/.zshrc
 
 重启`Terminal`，按 ➡ 键可生效
 ![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210830220920.png)
+
+# 安装命令高亮插件zsh-syntax-highlighting
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git  ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlightings
+```
+编辑`~/.zshrc`
+```
+plugins=(其他插件 zsh-syntax-highlighting)`
+```
+然后source一下
+```bash
+source ~/.zshrc
+```
+
+![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210905093013.png)
