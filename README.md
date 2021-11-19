@@ -129,7 +129,8 @@ DNS设置`CNAME`记录值为github page的url
 
 ![image-20210629130647291](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/image-20210629130647291.png)
 
-参考:
+## 参考:
 
-hexo官网: https://hexo.io/
-fluid主题: https://github.com/fluid-dev/hexo-theme-fluid
+- hexo官网: https://hexo.io/
+
+- fluid主题: https://github.com/fluid-dev/hexo-theme-fluid
