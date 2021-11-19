@@ -60,7 +60,7 @@ deploy:
 ```
 执行命令
 ```bash
-hexo d
+hexo g && hexo d
 ```
 ## 主题设置
 ### 修改首页banner图片
