@@ -8,8 +8,8 @@ date: 2021-06-29 10:00:00
 ---
 
 ## 简介
-`youtube-dl`是一款命令行下载工具,可以用来下载视频网站的视频.
-[支持列表](https://ytdl-org.github.io/youtube-dl/supportedsites.html)包括: BiliBili, youtube, 爱奇艺等
+`youtube-dl`是一款命令行下载工具,可以用来下载视频网站的视频.([Github链接](https://github.com/ytdl-org/youtube-dl))
+[支持列表](https://ytdl-org.github.io/youtube-dl/supportedsites.html)包括: BiliBili, Youtube, 爱奇艺等
 
 > youtube-dl项目由Ricardo Garcia创建于2008年。源代码由Python编写，托管在GitHub上。最初仅支持YouTube，但随着项目的发展，开始支持其他视频网站。2011年Ricardo Garcia不再维护此项目，由phihag接手，后转移给dstftw.
 
@@ -131,14 +131,19 @@ https://www.youtube.com/c/**************/videos
 
 ### 5.下载字幕
 
-`youtube-dl --write-sub [url]`这样会下载一个vtt格式的英文字幕和mkv格式的1080p视频下来
-`youtube-dl --write-sub --skip-download [url]`下载单独的vtt字幕文件,而不会下载视频
-`youtube-dl --write-sub --all-subs [url]`下载所有语言的字幕(如果有的话)
-`youtube-dl --write-auto-sub [url]`下载自动生成的字幕(YouTube only)
+- `youtube-dl --write-sub [url]`这样会下载一个vtt格式的英文字幕和mkv格式的1080p视频下来
+
+- `youtube-dl --write-sub --skip-download [url]`下载单独的vtt字幕文件,而不会下载视频
+
+- `youtube-dl --write-sub --all-subs [url]`下载所有语言的字幕(如果有的话)
+
+- `youtube-dl --write-auto-sub [url]`下载自动生成的字幕(YouTube only)
+
+- `youtube-dl  --embed-subs [url]` ：把字幕合并到视频中，只支持 mp4、mkv 和 webm 格式的视频
 
 ### 6.按日期下载视频列表
 
-Youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表，例如：
+youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表，例如：
 
 - 要下载 2019 年 8 月 1 日上传的视频，可以使用：`youtube-dl --date 20190801 [URL]`；
 
@@ -157,6 +162,7 @@ Youtube-dl 允许我们按照上传日期来筛选和下载视频或播放列表
 
 也可以按序号来指定下载范围，例如：
 - 从第 10 个开始，直接下载完整个列表：`youtube-dl --playlist-start 10 [playlist_url]`
+
 - 在播放列表中仅下载从第 2 到第 5 的文件：`youtube-dl --playlist-start 2 --playlist-end 5 [playlist_url]`
 
 ### 8. 查看视频的所有类型，只看不下载
