@@ -77,3 +77,32 @@ date: 2021-07-20 15:00:00
 
 ![image-20210720160034147](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210720162344.png)
 
+## (非必要) 把FLV文件转换成MP4文件
+`Bilibili-Evolved`默认下载格式是flv.
+flv格式也是可以用播发器播放的.
+如果需要mp4格式的话,可以通过使用`ffmpeg`把flv格式转为mp4格式.
+
+
+### CMD视频目录
+
+![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220214115021.png)
+
+![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220214115019.png)
+
+![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220214115340.png)
+
+
+### 转换文件
+> 以下命令在CMD里面执行
+> 确定已经安装ffmpeg, 并把ffmpeg加入到环境变量
+
+#### 转换多个文件
+```bash
+for %i in (*.flv) do ffmpeg -i "%i" -c copy "%~ni.mp4"
+```
+
+#### 转换单个文件
+```bash
+ffmpeg -i "input.flv" -c copy "output.mp4"
+```
+
