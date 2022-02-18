@@ -1,3 +1,7 @@
+## 前言
+文章使用[hexo](https://hexo.io/zh-cn/)编写, 主题为[fluid](https://github.com/fluid-dev/hexo-theme-fluid).
+
+
 ## 准备工作
 
 ### 安装Node.js 
