@@ -2,8 +2,8 @@
 title: 如何用Git进行协作开发
 tags: [Git]
 category: Git笔记
-index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20211231174052.webp
-banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20211231174052.webp
+index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220218121132.jpg
+banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220218121132.jpg
 date: 2021-12-31 17:35:00
 ---
 
