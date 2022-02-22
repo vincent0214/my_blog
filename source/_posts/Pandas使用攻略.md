@@ -396,7 +396,7 @@ print(r)
 import pandas as pd
 
 table = pd.read_excel("./student.xlsx")
-for index, row in df.iterrows():
+for index, row in table.iterrows():
     print(index)
     print(row["c1"])
 ```
