@@ -355,7 +355,7 @@ print(students.iloc[dupe.index])
 ### 定位数据
 
 使用`iloc`
-
+可以读取一行数据
 ```pyton
 import pandas as pd
 
@@ -391,6 +391,7 @@ print(r)
 
 ### 遍历数据
 遍历每一行数据
+迭代每一行数据
 ```python
 import pandas as pd
 
