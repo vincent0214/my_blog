@@ -60,7 +60,7 @@ vim  ~/.zshrc
 重启`Terminal`，按 ➡ 键可生效
 ![](https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20210830220920.png)
 
-# 安装命令高亮插件zsh-syntax-highlighting
+## 安装命令高亮插件zsh-syntax-highlighting
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git  ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlightings
 ```
@@ -68,7 +68,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git  ~/.oh-my-zsh
 ```
 plugins=(其他插件 zsh-syntax-highlighting)`
 ```
-然后source一下
+然后`source`一下
 ```bash
 source ~/.zshrc
 ```
