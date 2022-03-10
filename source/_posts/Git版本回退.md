@@ -7,7 +7,7 @@ banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/2
 date: 2022-03-10 10:39:00
 ---
 
-## 回退上个版本
+## 回退到上个版本
 
 ```bash
 git reset --hard HEAD^ 
