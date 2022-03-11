@@ -2,8 +2,8 @@
 title: Git版本回退
 tags: [Git]
 category: Git笔记
-index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20211231230931.jpg
-banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20211231230931.jpg
+index_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220311125036.jpg
+banner_img: https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220311125036.jpg
 date: 2022-03-10 10:39:00
 ---
 
