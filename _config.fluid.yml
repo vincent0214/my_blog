@@ -578,7 +578,7 @@ post:
   # Custom content at the bottom of the post page (located above the footer)
   custom:
     enable: true
-    content: '<img src="https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/peipei_blog/20220131195431.jpg" class="rounded mx-auto d-block mt-5" >'
+    content: '<img src="https://markdown-1301532546.cos.ap-guangzhou.myqcloud.com/markdown/20220610221541.jpg" class="rounded mx-auto d-block mt-5" >'
 
 
   # 文章图片可点击放大
